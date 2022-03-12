@@ -6,8 +6,6 @@ on:
 
 jobs:
  build_ios:
-   runs-on: macos-latest
-
-   steps:
-   - name: Run build script
-     run: ./github/scripts/pubspec copy.yaml
+ steps:
+ uses: actions/checkout@v2
+run:./github/scripts/pubspeccopy.yaml
