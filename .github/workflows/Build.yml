@@ -9,14 +9,5 @@ jobs:
    runs-on: macos-latest
 
    steps:
-   - name: Checkout the code
-     uses: actions/checkout@v2
-     
-         jobs:
-         deploy_ios:
-         runs-on: macos-latest
-
-            steps:
-             -name: Run build script
-             run:./github/scripts/pubspec copy.yaml
-  
+   - name: Run build script
+     run: ./github/scripts/pubspec copy.yaml
